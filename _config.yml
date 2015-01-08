@@ -1,7 +1,7 @@
 # Site settings
 title: wuchunyang
 email: cywindor@gmail.com
-description: > This is wuchunyang's blog
+# description: > This is wuchunyang's blog
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://wuchunyang.github.io" # the base hostname & protocol for your site
 #twitter_username:
