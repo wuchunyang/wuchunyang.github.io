@@ -1,11 +1,42 @@
-# Site settings
-title: wuchunyang
-email: cywindor@gmail.com
-# description: > This is wuchunyang's blog
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://wuchunyang.github.io" # the base hostname & protocol for your site
-#twitter_username:
-github_username:  wuchunyang
+name: wu.chunyang's blog
+description: wu.chunyang's blog
+meta_description: "wu.chunyang's blog"
 
-# Build settings
-markdown: kramdown
+aboutPage: false
+
+markdown: redcarpet
+highlighter: pygments
+
+paginate: 20
+baseurl: /
+domain_name: 'http://wuchunyang.github.io/'
+google_analytics: 'UA-XXXXXXXX-X'
+disqus: false
+disqus_shortname: 'your-disqus-shortname'
+
+# Details for the RSS feed generator
+url:            'http://wuchunyang.github.io/'
+author:         'wu.chunyang'
+authorTwitter:  'YourTwitterUsername'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
